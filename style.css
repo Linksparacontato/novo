@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #ecf0f3;
+}
+
+.wrapper,
+.wrapper .img-area,
+.social-icons a,
+.buttons button {
+  background: #ecf0f3;
+  box-shadow: -3px -3px 7px #ffffff,
+               3px 3px 5px #ceced1;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.wrapper .img-area {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.img-area .inner-area {
+  height: calc(100% - 25px);
+  width: calc(100% - 25px);
+  border-radius: 50%;
+}
+
+.inner-area img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.wrapper .name {
+  font-size: 23px;
+  font-weight: 500;
+  color: #31344b;
+  margin: 10px 0 5px 0;
+}
+
+.wrapper .about {
+  color: #44476a;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #31344b;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  padding: 10px;
+  width: 200px;
+}
+
+.social-icons a i {
+  margin-right: 5px;
+}
+
+.social-icons a.fb {
+  background-color: #4267B2;
+}
+
+.social-icons a.twitter {
+  background-color: #1da0f2a8;
+}
+
+.social-icons a.insta {
+  background-color: #e1306bec;
+}
+
+.social-icons a.yt {
+  background-color: #ff0000;
+}
+.social-icons a.location {
+    background-color: green;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.buttons button {
+  border: none;
+  outline: none;
+  padding: 12px 0;
+  color: #31344b;
+  font-size: 17px;
+  font-weight: 400;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #f1affac0 0%, #e2abde7e 40%,#c3b6da 60%,#df87cc 100%);
+    background-size: 200% 200%;
+    animation: float 4s linear infinite alternate;
+
+  }
+  
+  @keyframes float {
+    from{background-position: 0 0 ;}
+    to{background-position: 100% 100%;}
+
+
+
+  
+  
+  
+  
